@@ -1,9 +1,9 @@
 #a{
   font-family:'Broadway', cursive;
   font-size:3em;
-  text-shadow: 3px 3px 2px 	#002E0B	;
+  text-shadow: 3px 3px 2px  #002E0B ;
   border-radius:.1em;
-  margin: 5 auto;
+  margin: 0 auto;
   cursor: pointer;
   outline: 0;
   border: 0;
@@ -24,12 +24,10 @@
 } 
 
 div{
-  background: #ABCEFF;
+  background-image: url("eye.gif");
   font-family:"Berkshire Swash", cursive;
 
 }
-
-
 
 .pinImage {
   max-width: 15%;
@@ -90,7 +88,7 @@ div{
   margin: 10 auto;
   margin-bottom: -1px;
   background-color: #ffffff;
-  text-shadow: 3px 3px 5px 	#0D6943	;
+  text-shadow: 3px 3px 5px  #0D6943 ;
 }
 
 .transport:before {
