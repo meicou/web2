@@ -24,11 +24,13 @@
 } 
 
 div{
-  background-image: url("eye.gif");
   font-family:"Berkshire Swash", cursive;
 
 }
 
+.Q{
+  border-bottom:1px solid ;
+}
 .pinImage {
   max-width: 15%;
   width: auto\9;
@@ -60,7 +62,7 @@ div{
 .transport {
   position: relative;
   width:auto;
-  height: 300px;
+  height: 350px;
   background-color: #419D78;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
   border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
