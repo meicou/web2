@@ -24,13 +24,15 @@
 } 
 
 div{
-  font-family:"Berkshire Swash", cursive;
-
+  font-family:"Berkshire Swash", cursive;  
 }
 
 .Q{
   border-bottom:1px solid ;
+  font-weight: bold;
+  line-height:1.7em;
 }
+
 .pinImage {
   max-width: 15%;
   width: auto\9;
@@ -56,29 +58,63 @@ div{
   clear: both;
 }
 
-
-
 /* This code is tested with latest version of Firefox and Chrome */
 .transport {
   position: relative;
-  width:auto;
-  height: 350px;
+  max-width:900px;
+  min-width:200px;
+    height: 300px;
   background-color: #419D78;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
   border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
 }
 
+@media screen and (max-width: 1312px){
+.transport {
+  position: relative;
+  width:auto;
+  height: 450px;
+  background-color: #419D78;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+}
+}
+
+@media screen and (max-width: 750px){
+.transport {
+  position: relative;
+  width:auto;
+  height: 620px;
+  background-color: #419D78;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+}
+}
+
+@media screen and (max-width: 430px){
+.transport {
+  position: relative;
+  width:auto;
+  height: 1200px;
+  background-color: #419D78;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+}
+}
+
 .transport>li {
   display: inline-block;
-  width: 20%;
-  height: 120px;
-  margin: 0 auto;
+  width: 15%;
+  margin: 20px 30px 20px 40px;
   position: relative;
-  padding: 10px 10px 10px 10px;
+  padding: inherit;
+  padding-left: 0px;
+  box-sizing: border-box;
 }
+
 .list-group-item:first-child {
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 3px;
 }
 .list-group-item {
   color: #1B242E;
@@ -86,56 +122,12 @@ div{
 .list-group-item {
   position: relative;
   display: inline-block;
-  padding: 10px 10px 10px 10px;
-  margin: 10 auto;
+  padding: 5px 5px;
+  margin: 0 auto;
   margin-bottom: -1px;
   background-color: #ffffff;
   text-shadow: 3px 3px 5px  #0D6943 ;
 }
-
-.transport:before {
-    position: absolute;
-    content: "";
-    width: 130%;
-    height: 30%;
-    border-left: 1px dashed rgba(0, 0, 0, 0.1);
-    border-right: 1px dashed rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
-    background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -ms-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -o-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
-    -webkit-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     -moz-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     -ms-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     -o-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-    }
-
-.transport:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    left: 0;
-    width: 130%;
-    height: 30%;
-    border-left: 1px dashed rgba(0, 0, 0, 0.1);
-    border-right: 1px dashed rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
-    background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -ms-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -o-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
-    -webkit-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     -moz-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     -ms-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     -o-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-    }
 
 .edu>li{
   margin:10px auto;
